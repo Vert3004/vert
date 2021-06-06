@@ -56,6 +56,7 @@
     background: yellow;
     font-weight: bold;
     cursor: pointer;
+    
 }
 .nav-links .btn{
     float: right;
@@ -71,4 +72,55 @@
 }
 .banner-title h1 span{
     color: yellow;
+}
+.bars1{
+    padding: 10px 10px;
+    border: 0;
+    background: yellowgreen;
+    cursor: pointer;
+    height: 5px;
+    width: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.bars2{
+    padding: 10px 10px;
+    border: 0;
+    background: yellowgreen;
+    cursor: pointer;
+    height: 5px;
+    width: 0px;
+    margin-left: 290px;
+    margin-top: 15px;
+}
+@media (max-width:700px){
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title h1{
+        font-size: 50px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul a{
+        display: block;
+
+    }
+    .nav-links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
 }
